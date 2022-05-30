@@ -1,0 +1,86 @@
+.our__form{
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(80,80,80,0.1);   
+}
+.form__heading{
+     font-size: 18px;
+     text-transform: uppercase;
+ }
+.form__text{
+     font-weight: 700;
+     margin-bottom: 10px;
+}
+.form__menu{
+     list-style: none;
+}
+.form__link{
+     text-decoration: none;
+     font-size: 22px;
+     color: #6da0cb;
+ }
+.form__link:hover{
+     text-decoration: underline;
+ }
+.form__description{
+    margin-top: 20px;
+}
+.form__input{
+    margin-top: 20px;
+    padding: 0 50px 0 10px;
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 5px;
+    border:1px solid #eaeaea;
+}
+.form__input_checkbox{
+    margin-right: 15px;
+}
+.form__input:focus{
+    outline: none;
+    border:1px solid #fcbc04;   
+}
+.form__label{
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+.form__btn{
+    text-transform: uppercase;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #666666;
+    font-weight: 700;
+        &:hover{
+            color: black;
+        }
+}
+
+
+.dark__theme{
+    .our__form{
+        background: crimson;
+        border: 1px solid yellow;
+        color: aqua;
+        font-weight: 700;
+        .form__link{
+            color: yellow;
+            font-weight: 400;
+        }
+        .form__btn{
+            background: rgb(5, 5, 155);
+            color: yellow;
+            &:hover{
+                background: rgb(0, 0, 255);
+                color: yellow;
+            }
+        }
+     
+    }    
+}

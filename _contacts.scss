@@ -1,0 +1,88 @@
+.contacts{
+    min-height: 300px;
+        .content{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-bottom: 80px;
+        }
+        &__left{
+            width: 280px;
+        }
+        i{
+            color: #f8a02d;
+            margin-right: 20px;
+        }
+
+        &__header{
+            margin-top: 30px;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        &__menu{
+            list-style: none;
+        }
+        &__list{
+            margin-bottom: 20px;
+            font-size: 18px;
+            display: flex;
+        }
+        &__link{
+            text-decoration: none;
+            font-size: 20px;
+            color: #4586bd;
+        }
+        &__link:hover{
+            text-decoration: underline;
+        }
+        &__text{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        &__left__heading{
+            margin-bottom: 20px;
+        }
+        &__left__menu{
+            list-style: none;
+        }
+        &__left__list{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+}       
+
+@media (max-width: 1199px){
+    .contacts{
+        .content{
+            flex-direction: column;
+        }
+        &__left{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        &__menu{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__list, &__link{
+            font-size: 16px;
+        }
+        i{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        &__right{
+            width: 800px;
+            margin: 0 auto;
+        }
+
+    }
+}
+
+@media (max-width: 991px){
+
+}
+
+//доработать карту

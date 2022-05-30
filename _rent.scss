@@ -1,0 +1,177 @@
+.rent{
+    .main__heading{
+        font-size: 30px;
+        text-transform: uppercase;
+        padding-top: 50px;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .left{
+      width: 800px;
+     
+        .rent__heading{
+            margin-top: 20px;
+            font-size: 26px;
+        }
+        .rent__title{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .rent__text{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .rent__menu{
+            padding-top: 20px;
+        }
+        .rent__list{
+            margin-top: 10px;
+            font-size: 18px;
+            margin-left: 50px;
+        }
+        
+    }
+    .right{
+        width: 280px;
+    }
+
+   
+
+    .reviews{
+        margin-top: 20px;
+            &__heading{
+                font-size: 24px;
+            }
+            &__text{
+                font-style: italic;
+                margin-top: 20px;
+            }
+            &__client{
+                margin-top: 10px;
+                display: flex;
+                justify-content: flex-end;
+                font-weight: 700;
+                font-size: 14px;
+            }
+    }    
+}
+
+@media (max-width: 1199px){
+    
+    .rent{
+        .left{
+            width: 700px;
+            .about__company__photo{
+                width: 100%;
+            }
+        }  
+    }
+}
+
+@media (max-width: 1023px){
+    .rent{
+        .left{
+            width: 650px;
+            
+        }  
+    }
+}
+
+// заголовок ебет мозги
+@media (max-width: 991px){
+    .rent{
+        .rent__text{
+            text-align: center;
+        }
+        .content{
+            flex-direction: column;
+        }
+        
+        .left{
+            margin: 0 auto;
+            width: 700px;
+        }   
+        .right{
+           width: 300px;
+           margin: 50px auto 0;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .rent{
+        .left{
+            width: 600px;
+        }
+    }
+   
+}
+
+@media (max-width: 666px){
+    .rent{
+        .main__heading{
+            text-indent: 35px;
+        }
+        .left{
+            width: 500px;
+        }
+    }
+   
+}
+
+@media (max-width: 575px){
+    .rent{
+        .main__heading{
+           font-size: 24px;
+        }
+        .left{
+            width: 450px;
+            .rent__heading{
+                font-size: 20px;
+            }
+            .rent__text{
+                font-size: 16px;
+            }
+            .rent__list{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 479px){
+    .rent{
+        .main__heading{
+           font-size: 20px;
+        }
+        .left{
+            width: 100%;
+            .rent__heading{
+                font-size: 18px;
+            }
+            .rent__title{
+                font-size: 16px;
+            }
+            .rent__title__security{
+                font-size: 18px;
+            }
+            .rent__text{
+                font-size: 14px;
+            }
+            .rent__list{
+                margin-left: 20px;
+                font-size: 16px;
+            }
+        }
+        .right{
+            text-align: center;
+            width: 100%;
+        }
+        
+        
+    }
+}

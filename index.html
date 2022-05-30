@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Грузоперевозки</title>
+    <script src="https://kit.fontawesome.com/fda6639a1f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme">
+
+<div class="wrapper">
+        <header class="header">
+            <div class="header__top center">
+                <div class="left">
+                    <div class="block__left">
+                        <i class="fas fa-map-signs"></i><h3 class="heading__city">г.Москва, ул. Красная площадь д.1</h3>
+                    </div>
+                </div> 
+                <div class="right">
+                    <a href="tel:8(7422)22-88-88" class="header__tel"><i class="fas fa-phone-alt"></i>8(7422) 22-88-88</a>
+                    <a href="tel:8(1234)56-78-91" class="header__tel"><i class="fas fa-phone-alt"></i>8(1234) 56-78-91</a>
+                </div>
+            </div>
+            <div class="block__header">
+                    <div class="change__theme center">
+                        <div class="checkbox"> 
+                            <div class="switcher">
+                                <input class="switcher__input" type="checkbox" name="watched" id="switcher">
+                                <label class="switcher__label" for="switcher">Темная тема
+                                </label>
+                            </div>    
+                        </div>
+                    </div>
+                <div class="header__bottom center">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="img/header-logo.png" alt="логотип"></a> 
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__menu">
+                            <li class="header__list"><a href="index.html" class="header__link">Главная</a></li>
+                            <li class="header__list"><a href="aboutcompany.html" class="header__link">О компании</a></li>
+                            <li class="header__list"><a href="#catalog" class="header__link">Каталог спецтехники</a></li>
+                            <li class="header__list"><a href="rent.html" class="header__link">Условия аренды</a></li>
+                            <li class="header__list"><a href="contacts.html" class="header__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+        </header>
+
+        <header class="header header__mobile">
+            <div class="header__top__mobile">
+                <div class="block__header">
+                    <div class="checkbox"> 
+                        <div class="switcher-mobile">
+                            <input class="switcher__input-mobile" type="checkbox" name="watched" id="switcher-mobile">
+                            <label class="switcher__label-mobile" for="switcher-mobile">Темная тема
+                            </label>
+                        </div>    
+                    </div>
+                </div> 
+                <div class="header__mobile__logo">
+                    <a href="index.html"><img src="img/header-logo.png" alt="логотип"></a> 
+                </div>   
+                <div class="block__burger">
+                    <span class="block__burger-line"></span>
+                    <span class="block__burger-line"></span>
+                    <span class="block__burger-line"></span>
+                </div>  
+            </div>      
+        </header>
+        
+        <header class="header__bottom__mobile">
+            <div class="header__block__content">
+                <div class="left">
+                    <div class="block__left">
+                        <i class="fas fa-map-signs"></i><h3 class="heading__city">г.Москва, ул. Красная площадь д.1</h3>
+                    </div>
+                </div> 
+            
+                <div class="right">
+                    <a href="tel:8(7422)22-88-88" class="header__tel"><i class="fas fa-phone-alt"></i>8(7422) 22-88-88</a>
+                    <a href="tel:8(1234)56-78-91" class="header__tel"> <i class="fas fa-phone-alt"></i>8(1234) 56-78-91</a>
+                </div>
+            </div>     
+                <nav class="header__mobile__nav">
+                    <ul class="header__mobile__menu">
+                        <li class="header__list"><a href="index.html" class="header__mobile__link">Главная</a></li>
+                        <li class="header__mobile__list"><a href="aboutcompany.html" class="header__mobile__link">О компании</a></li>
+                        <li class="header__mobile__list"><a href="#catalog" class="header__mobile__link">Каталог спецтехники</a></li>
+                        <li class="header__mobile__list"><a href="rent.html" class="header__mobile__link">Условия аренды</a></li>
+                        <li class="header__mobile__list"><a href="contacts.html" class="header__mobile__link">Контакты</a></li>
+                    </ul>
+                </nav>
+        </header>    
+        
+    <div class="main__content">        
+        <section class="promo">
+            <div class="slider__wrapper">
+                <div class="slider active">
+                    <div class="slider__img">
+                        <img src="img/promo-bg.jpg" alt="Тяжелый гидравлический экскаватор большой мощности"> 
+                    </div>    
+                    <div class="slider__descr center">
+                        <div class="block__slider__heading">
+                            <h3 class="slider__heading">Тяжелый гидравлический экскаватор большой мощности</h3>
+                        </div>
+                        <h1 class="slider__name">Cat 336d2 gc</h1>
+                        <p class="slider__price">от <span class="slider__price_mod"> 2200 р.</span> в час</p>
+                        <button class="slider__btn">Арендовать экскаватор</button>
+                    </div>    
+                </div>    
+                <div class="slider">
+                    <div class="slider__img">
+                        <img src="img/ecsckavator-bg.jpg" alt="Аренда тракторов"> 
+                    </div>    
+                    <div class="slider__descr center">
+                        <div class="block__slider__heading">
+                            <h3 class="slider__heading">От уборки снега до предоставления техники на стройплощадки</h3>
+                        </div>
+                        <h1 class="slider__name">Аренда спецтехники</h1>
+                        <p class="slider__price">от <span class="slider__price_mod"> 1000 р.</span> в час</p>
+                        <button class="slider__btn">Арендовать трактор</button>
+                    </div>    
+                </div>   
+                <div class="slider">
+                    <div class="slider__img">
+                        <img src="img/Karernyy-samosval-Cat-797F.jpg" alt="Карьерный самосвал"> 
+                    </div>    
+                    <div class="slider__descr center">
+                        <div class="block__slider__heading">
+                            <h3 class="slider__heading">Трансмиссия ZF ADT, имеющая 8 скоростей переднего хода и 4 скорости заднего</h3>
+                        </div>
+                        <h1 class="slider__name">Самосвалы John Deere</h1>
+                        <p class="slider__price">от <span class="slider__price_mod"> 3000 р.</span> в час</p>
+                        <button class="slider__btn">Арендовать самосвал</button>
+                    </div>    
+                </div>      
+                    <div class="arrow__left"><i class="fas fa-chevron-left"></i></div>
+                    <div class="arrow__right"><i class="fas fa-chevron-right"></i></div>    
+            </div>    
+        </section>
+
+        <section class="what-we-do center">
+            <div class="timer">
+                <div class="timer__title">
+                    <div class="block__timer__heading">
+                        <h3 class="timer__heading">Скидка 50% на любую технику</h3>
+                    </div>
+                </div>
+                <div class="timer__descr">
+                    <span class="timer__descr-heading">
+                        Возьми любую технику в аренду на сутки и получи скидку 50%.
+                    </span>
+                    <span class="timer__descr-heading">
+                        Срок акции ограничен!
+                    </span>
+                </div>
+                
+                <div class="main__timer">
+                    <div class="block__timer">
+                        <span class="block__timer-clock" id="days">00</span>
+                        <span class="block__timer-text" >Дней</span>
+                    </div>
+                    <div class="block__timer">
+                        <span class="block__timer-clock" id="hours">00</span>
+                        <span class="block__timer-text">Часов</span>
+                    </div>
+                    <div class="block__timer">
+                        <span class="block__timer-clock" id="minutes">00</span>
+                        <span class="block__timer-text">Минут</span>
+                    </div>
+                    <div class="block__timer">
+                        <span class="block__timer-clock" id="seconds">00</span>
+                        <span class="block__timer-text">Секунд</span>
+                    </div>
+                </div>
+            </div>
+                <div class="what-we-do__block__heading">
+                    <h3 class="what-we-do__heading">Почему с нами выгодно сотрудничать?</h3>
+                </div>    
+                
+            <div class="what-we-do__content">
+                <div class="what-we-do__block-items">
+                    <div class="what-we-do__items">
+                        <div class="what-we-do__img what-we-do__img__one"></div>
+                        <div class="what-we-do__info">
+                            <h3 class="what-we-do__title">Без залога</h3>
+                            <p class="what-we-do__text">Для клиентов, воспользовавшихся услугами более 3 раз</p>
+                        </div>     
+                    </div>
+                    <div class="what-we-do__items">
+                        <div class="what-we-do__img what-we-do__img__two"></div>     
+                            <div class="what-we-do__info">
+                                <h3 class="what-we-do__title">Доставим по адресу</h3>
+                                <p class="what-we-do__text">От суммы аренды от 5000 рублей - доставка бесплатная</p>
+                            </div> 
+                    </div>
+                </div>
+                <div class="what-we-do__block-items">
+                    <div class="what-we-do__items">
+                        <div class="what-we-do__img what-we-do__img__three"></div>     
+                        <div class="what-we-do__info">
+                            <h3 class="what-we-do__title">Быстро</h3>
+                            <p class="what-we-do__text">Оформление аренды спецтехники всего за 20 минут!</p>
+                        </div> 
+                    </div>
+                    <div class="what-we-do__items">
+                        <div class="what-we-do__img what-we-do__img__four"></div>     
+                        <div class="what-we-do__info">
+                            <h3 class="what-we-do__title">Безопасно</h3>
+                            <p class="what-we-do__text">Вся техника застрахована и в отличном состоянии</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog center" id="catalog">
+                <h3 class="catalog__header">Каталог спецтехники</h3>
+            <ul class="catalog__menu">
+                <li class="catalog__list">Все</li>
+                <li class="catalog__list">Автокраны</li>
+                <li class="catalog__list">Экскаваторы</li>
+                <li class="catalog__list">Бульдозеры</li>
+                <li class="catalog__list">Длинномеры</li>
+                <li class="catalog__list">Манипуляторы</li>
+                <li class="catalog__list">Погрузчики</li>
+            </ul>
+            <div class="catalog__box">
+                <div class="catalog__items">
+                    <div class="catalog__price">Цена:по запросу</div>
+                    <div class="catalog__img">
+                        <a href="Avtokran-Kamaz-25t-Ivanovecz.html"><img class="catalog__photo" src="img/ivanovec.jpg" alt="Автокран Ивановец 25т"></a>
+                    </div>
+                    <div class="catalog__heading">Автокран Камаз 25т. (Ивановец)</div>
+                    <div class="catalog__descriptions">
+                        <div class="catalog__descriptions__top">
+                            <div class="descriptions__left">
+                                <p class="descriptions__text">Грузоподъемность</p>
+                                <p class="descriptions__text">Основная стрела</p>
+                                <p class="descriptions__text">Удлинитель стрелы</p>
+                            </div>
+                            <div class="descriptions__right">
+                                <p class="descriptions__text">90 тонн</p>
+                                <p class="descriptions__text">от 11,6 до 18 метров</p>
+                                <p class="descriptions__text">7 метров</p>
+                            </div>
+                        </div>
+                        <div class="catalog__btn">
+                            <a class="left__btn" href="Avtokran-Kamaz-25t-Ivanovecz.html">Подробнее</a>
+                            <button class="right__btn">Арендовать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__items">
+                    <div class="catalog__price">Цена:по запросу</div>
+                    <div class="catalog__img">
+                        <a href="Avtokran-Maz-Ivanovec.html"><img class="catalog__photo" src="img/avtokran-ivanovec.png" alt="Автокран Маз Ивановец"></a>
+                    </div>
+                    <div class="catalog__heading">Автокран на шасси МАЗ (Ивановец)</div>
+                    <div class="catalog__descriptions">
+                        <div class="catalog__descriptions__top">
+                            <div class="descriptions__left">
+                                <p class="descriptions__text">Грузоподъемность</p>
+                                <p class="descriptions__text">Макс. высота</p>
+                                <p class="descriptions__text">Вылет стрелы мин/макс</p>
+                            </div>
+                            <div class="descriptions__right">
+                                <p class="descriptions__text">12,5 тонн</p>
+                                <p class="descriptions__text">14 м</p>
+                                <p class="descriptions__text">3,6-13 м</p>
+                            </div>
+                        </div>  
+                        <div class="catalog__btn">
+                            <a class="left__btn" href="Avtokran-Maz-Ivanovec.html">Подробнее</a>
+                            <button class="right__btn">Арендовать</button>
+                        </div>  
+                    </div>
+                </div>
+                <div class="catalog__items">
+                    <div class="catalog__price">Цена:по запросу</div>
+                    <div class="catalog__img">
+                        <a href="Avtokran-Liebherr70t.html"><img class="catalog__photo" src="img/avtokran-Liebherr.jpg" alt="Автокран Liebherr 70т"></a>
+                    </div>
+                    <div class="catalog__heading">Автокран Liebherr 70т.</div>
+                    <div class="catalog__descriptions">
+                        <div class="catalog__descriptions__top">
+                            <div class="descriptions__left">
+                                <p class="descriptions__text">Грузоподъемность</p>
+                                <p class="descriptions__text">Основная стрела</p>
+                                <p class="descriptions__text">Удлинитель стрелы</p>
+                            </div>
+                            <div class="descriptions__right">
+                                <p class="descriptions__text">300 тонн</p>
+                                <p class="descriptions__text">от 15,6 до 80 метров</p>
+                                <p class="descriptions__text">21 м</p>
+                            </div>
+                        </div>   
+                        <div class="catalog__btn">
+                            <a class="left__btn" href="Avtokran-Liebherr70t.html">Подробнее</a>
+                            <button class="right__btn">Арендовать</button>
+                        </div>  
+                    </div>
+                </div>
+                <div class="catalog__items">
+                    <div class="catalog__price">Цена:по запросу</div>
+                    <div class="catalog__img">
+                        <a href="Ecskavator-CASE-WX95.html"><img class="catalog__photo" src="img/ecsckavator-CASE_WX95.jpg" alt="Экскаватор CASE WX95"></a>
+                    </div>
+                    <div class="catalog__heading">Экскаватор CASE WX95</div>
+                    <div class="catalog__descriptions">
+                        <div class="catalog__descriptions__top">
+                            <div class="descriptions__left">
+                                <p class="descriptions__text">Общий вес</p>
+                                <p class="descriptions__text">Глубина копания, мм</p>
+                                <p class="descriptions__text">Высота выгрузки, мм</p>
+                            </div>
+                            <div class="descriptions__right">
+                                <p class="descriptions__text">10 тонн</p>
+                                <p class="descriptions__text">3951/4298</p>
+                                <p class="descriptions__text">6147/6490</p>
+                            </div>
+                        </div>   
+                        <div class="catalog__btn">
+                            <a class="left__btn" href="Ecskavator-CASE-WX95.html">Подробнее</a>
+                            <button class="right__btn">Арендовать</button>
+                        </div>   
+                    </div>
+                </div>
+                <div class="catalog__items">
+                    <div class="catalog__price">Цена:по запросу</div>
+                    <div class="catalog__img">
+                        <a href="Ecskavator-Komatsu-pc300-7.html"><img class="catalog__photo" src="img/ecskavator-Komatsu.jpg" alt="Экскаватор Komatsu pc300-7"></a>
+                    </div>
+                    <div class="catalog__heading">Экскаватор Komatsu pc300-7</div>
+                    <div class="catalog__descriptions">
+                        <div class="catalog__descriptions__top">
+                            <div class="descriptions__left">
+                                <p class="descriptions__text">Вес</p>
+                                <p class="descriptions__text">Глубина копания, мм</p>
+                                <p class="descriptions__text">Высота выгрузки, мм</p>
+                            </div>
+                            <div class="descriptions__right">
+                                <p class="descriptions__text">12 тонн</p>
+                                <p class="descriptions__text">3951/4298</p>
+                                <p class="descriptions__text">6147/6490</p>
+                            </div>
+                        </div>
+                        <div class="catalog__btn">
+                            <a class="left__btn" href="Ecskavator-Komatsu-pc300-7.html">Подробнее</a>
+                            <button class="right__btn">Арендовать</button>
+                        </div>   
+                    </div>    
+                </div>
+                <div class="catalog__items">
+                    <div class="catalog__price">Цена:по запросу</div>
+                    <div class="catalog__img">
+                        <a href="Bulldozer-Caterpilar-D9R(Cat).html"><img class="catalog__photo" src="img/bulldozer-Caterpillar.jpg" alt="Бульдозер Caterpilar D9R"></a>
+                    </div>
+                    <div class="catalog__heading">Бульдозер Caterpilar D9R (Cat)</div>
+                    <div class="catalog__descriptions">
+                        <div class="catalog__descriptions__top">
+                            <div class="descriptions__left">
+                                <p class="descriptions__text">Длина</p>
+                                <p class="descriptions__text">Ширина</p>
+                                <p class="descriptions__text">Максимальное усилие</p>
+                            </div>
+                            <div class="descriptions__right">
+                                <p class="descriptions__text">8100 мм</p>
+                                <p class="descriptions__text">4500 мм</p>
+                                <p class="descriptions__text">154.0 кН</p>
+                            </div>
+                        </div>  
+                        <div class="catalog__btn">
+                            <a class="left__btn" href="Bulldozer-Caterpilar-D9R(Cat).html">Подробнее</a>
+                            <button class="right__btn">Арендовать</button>
+                        </div>    
+                    </div>
+                </div>
+                <div class="catalog__items">
+                    <div class="catalog__price">Цена:по запросу</div>
+                    <div class="catalog__img">
+                        <a href="Dlinnomer-Mercedes.html"> <img class="catalog__photo" src="img/Dlinnomer-Mercedes.jpg" alt="Длинномер Mercedes"></a>
+                    </div>
+                    <div class="catalog__heading">Длинномер Mercedes</div>
+                    <div class="catalog__descriptions">
+                        <div class="catalog__descriptions__top">
+                            <div class="descriptions__left">
+                                <p class="descriptions__text">Грузоподъемность</p>
+                                <p class="descriptions__text">Длина борта</p>
+                                <p class="descriptions__text_mod">Вес техники</p>
+                            </div>
+                            <div class="descriptions__right">
+                                <p class="descriptions__text">25 тонн</p>
+                                <p class="descriptions__text">13,5 метров</p>
+                                <p class="descriptions__text_mod">30 тонн</p>
+                            </div>
+                        </div>
+                        <div class="catalog__btn">
+                            <a class="left__btn" href="Dlinnomer-Mercedes.html">Подробнее</a>
+                            <button class="right__btn">Арендовать</button>
+                        </div>  
+                    </div>    
+                </div>   
+                <div class="catalog__items">
+                    <div class="catalog__price">Цена:по запросу</div>
+                    <div class="catalog__img">
+                        <a href="Manipulator.html"><img class="catalog__photo" src="img/manipulator.jpg" alt="Манипулятор"></a>
+                    </div>
+                    <div class="catalog__heading">Манипулятор КАМАЗ 5т.</div>
+                    <div class="catalog__descriptions">
+                        <div class="catalog__descriptions__top">
+                            <div class="descriptions__left">
+                                <p class="descriptions__text">Грузоподъемность</p>
+                                <p class="descriptions__text">Скорость движения</p>
+                                <p class="descriptions__text">Вес техники</p>
+                            </div>
+                            <div class="descriptions__right">
+                                <p class="descriptions__text">20 тонн</p>
+                                <p class="descriptions__text">90 км/час</p>
+                                <p class="descriptions__text">25 тонн</p>
+                            </div>
+                        </div>
+                        <div class="catalog__btn">
+                            <a class="left__btn" href="Manipulator.html">Подробнее</a>
+                            <button class="right__btn">Арендовать</button>
+                        </div>  
+                    </div>    
+                </div>   
+                <div class="catalog__items">
+                    <div class="catalog__price">Цена:по запросу</div>
+                    <div class="catalog__img">
+                        <a href="Pogruzchik-Cat-990.html"> <img class="catalog__photo" src="img/pogruschik-cat-990.jpg" alt="Погрузчик Cat 990"></a>
+                    </div>
+                    <div class="catalog__heading">Погрузчик cat 990</div>
+                    <div class="catalog__descriptions">
+                        <div class="catalog__descriptions__top">
+                            <div class="descriptions__left">
+                                <p class="descriptions__text">Полезная мощность</p>
+                                <p class="descriptions__text">Эксплуатационная масса</p>
+                                <p class="descriptions__text">Вместимость ковша</p>
+                            </div>
+                            <div class="descriptions__right">
+                                <p class="descriptions__text">521 кВт</p>
+                                <p class="descriptions__text">80974 кг</p>
+                                <p class="descriptions__text">8,6 - 10,0 м3</p>
+                            </div>
+                        </div>
+                        <div class="catalog__btn">
+                            <a class="left__btn" href="Pogruzchik-Cat-990.html">Подробнее</a>
+                            <button class="right__btn">Арендовать</button>
+                        </div> 
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <section class="popular__technic">
+                <h3 class="popular__technic__header">Популярная техника</h3>
+            <div class="popular__technic-wrapper">
+                <div class="popular__technic-slider active">
+                    <div class="popular__technic__slider-img">
+                        <img class="popular__technic-photo" src="img/popular__avto/ivanovec.png" alt="слайдер">
+                    </div>
+                    <div class="popular__technic-descr">
+                        <h3 class="popular__technic_price">1600р/сутки</h3>
+                        <h3 class="popular__technic_header">Автокран на шасси маз (Ивановец)</h3>
+                        <p class="popular__technic_text">Максимальная глубина копания 6 м</p>
+                        <button class="slider__btn">Взять в аренду</button>
+                    </div>    
+                </div>
+
+                <div class="popular__technic-slider">
+                    <div class="popular__technic__slider-img">
+                        <img class="popular__technic-photo" src="img/popular__avto/ecskavator-hitachi.png" alt="слайдер">
+                    </div>
+                    <div class="popular__technic-descr">
+                        <h3 class="popular__technic_price">2600р/сутки</h3>
+                        <h3 class="popular__technic_header">Экскаватор Hitachi 330</h3>
+                        <p class="popular__technic_text">Максимальная глубина копания 6 м</p>
+                        <button class="slider__btn">Взять в аренду</button>
+                    </div>    
+                </div>
+
+                <div class="popular__technic-slider">
+                    <div class="popular__technic__slider-img">
+                        <img class="popular__technic-photo" src="img/popular__avto/avtokran-ivanovec.png" alt="слайдер">
+                    </div>
+                    <div class="popular__technic-descr">
+                        <h3 class="popular__technic_price">1200р/сутки</h3>
+                        <h3 class="popular__technic_header">Автокран камаз 32т(Ивановец)</h3>
+                        <p class="popular__technic_text">Максимальная глубина копания 6 м</p>
+                        <button class="slider__btn">Взять в аренду</button>
+                    </div>    
+                </div>
+
+                <div class="popular__technic-slider">
+                    <div class="popular__technic__slider-img">
+                        <img class="popular__technic-photo" src="img/popular__avto/pogruschic-bobcat-s-300.png" alt="слайдер">
+                    </div>
+                    <div class="popular__technic-descr">
+                        <h3 class="popular__technic_price">1600р/сутки</h3>
+                        <h3 class="popular__technic_header">Погрузчик Bobcat S300</h3>
+                        <p class="popular__technic_text">Максимальная глубина копания 6 м</p>
+                        <button class="slider__btn">Взять в аренду</button>
+                    </div>    
+                </div>
+
+                <div class="popular__technic-slider">
+                    <div class="popular__technic__slider-img">
+                        <img class="popular__technic-photo" src="img/popular__avto/pogruschic-cat-990.png" alt="слайдер">
+                    </div>
+                    <div class="popular__technic-descr">
+                        <h3 class="popular__technic_price">1500р/сутки</h3>
+                        <h3 class="popular__technic_header">Погрузчик Cat 990</h3>
+                        <p class="popular__technic_text">Максимальная глубина копания 6 м</p>
+                        <button class="slider__btn">Взять в аренду</button>
+                    </div>
+                </div>
+
+                <div class="popular__technic-slider">
+                    <div class="popular__technic__slider-img">
+                        <img class="popular__technic-photo" src="img/popular__avto/manipulator-8t.png" alt="слайдер">
+                    </div>
+                    <div class="popular__technic-descr">
+                        <h3 class="popular__technic_price">1400р/сутки</h3>
+                        <h3 class="popular__technic_header">Манипулятор Камаз 8т</h3>
+                        <p class="popular__technic_text">Максимальная глубина копания 6 м</p>
+                        <button class="slider__btn">Взять в аренду</button>
+                    </div>    
+                </div>
+                <div class="popular__technic-left_btn"><i class="fas fa-chevron-left"></i></div>
+                <div class="popular__technic-right_btn"><i class="fas fa-chevron-right"></i></div>  
+            </div>    
+        
+        </section>
+
+        <section class="about center">
+            <div class="content">
+                <div class="about__items">
+                    <div class="about__descriptions">
+                        <h3 class="about__heading">220</h3>
+                        <p class="about__text">Единиц техники</p>
+                    </div>
+                </div>
+                <div class="about__items">
+                    <div class="about__descriptions">
+                        <h3 class="about__heading">6</h3>
+                        <p class="about__text">Лет на рынке</p>
+                    </div>
+                </div>
+                <div class="about__items">
+                    <div class="about__descriptions">
+                        <h3 class="about__heading">1000</h3>
+                        <p class="about__text">Довольных клиентов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews center">
+            <h3 class="reviews__header">Отзывы наших клиентов</h3>
+           <div class="reviews__wrapper">
+               <div class="reviews__slider">
+                    <div class="slider__items">
+                        <div class="slider__img">
+                            <img src="img/reviews/client-1.jpg" alt="клиент">
+                        </div>
+                        <div class="slider__descr">
+                            <h3 class="slider__name">Хидео Кодзима</h3>
+                            <p class="slider__text slider__text_mod">Арендовал Трактор</p>
+                            <p class="slider__text slider__text-review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis tempore veritatis eum sit. Vitae rerum deserunt deleniti expedita dolores doloribus. Voluptas libero quas cum ut ab, iste culpa expedita inventore.</p>
+                        </div>
+                   </div>
+               </div>
+               <div class="reviews__slider">
+                    <div class="slider__items">
+                        <div class="slider__img">
+                            <img src="img/reviews/client-2.jpg" alt="клиент">
+                        </div>
+                        <div class="slider__descr">
+                            <h3 class="slider__name">Билл Гейтс</h3>
+                            <p class="slider__text slider__text_mod">Арендовал Экскаватор</p>
+                            <p class="slider__text slider__text-review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis tempore veritatis eum sit. Vitae rerum deserunt deleniti expedita dolores doloribus. Voluptas libero quas cum ut ab, iste culpa expedita inventore.</p>
+                        </div>
+                    </div> 
+               </div>
+               <div class="reviews__slider">
+                   <div class="slider__items">
+                        <div class="slider__img">
+                            <img src="img/reviews/client-3.jpg" alt="клиент">
+                        </div>
+                        <div class="slider__descr">
+                            <h3 class="slider__name">Джеки Чан</h3>
+                            <p class="slider__text slider__text_mod">Арендовал Самосвал</p>
+                            <p class="slider__text slider__text-review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis tempore veritatis eum sit. Vitae rerum deserunt deleniti expedita dolores doloribus. Voluptas libero quas cum ut ab, iste culpa expedita inventore.</p>
+                        </div>
+                   </div>
+               </div>
+               <div class="reviews__btn reviews-left_btn"><i class="fas fa-chevron-left"></i></div>
+               <div class="reviews__btn reviews-right_btn"><i class="fas fa-chevron-right"></i></div>  
+           </div>
+
+        </section>
+
+        <section class="contact center">
+            <div class="info">
+                <i class="fas fa-phone-alt tel__icon"></i>
+                <ul class="info__menu">
+                    <li class="info__list"><a class="info__tel" href="tel:87422228888">8(7422) 22-88-88</a></li> 
+                    <li class="info__list"><a class="info__tel" href="tel:81234567891">8(1234) 56-78-91</a></li> 
+                </ul>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt map__icon"></i>
+                <div class="geolocations">г.Москва, ул. Красная площадь д.1</div>
+            </div>
+            <div class="info">
+                <i class="far fa-clock clock__icon"></i>
+                <div class="work__time"> пн–сб: 11:00 – 20:00 вс: выходной</div>
+            </div>
+        </section>
+
+        <section class="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8682f0d300680ddb1393c851a7692e107ff1461d1471325cd27510610062044e&amp;width=100%25&amp;height=538&amp;lang=ru_RU&amp;scroll=true"></script>
+        </section>
+
+        <div class="modal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="modal__heading">Вы действительно хотите арендовать эту технику?</div>
+                    <div class="modal__decision">
+                        <div class="modal__img">
+                            <i class="far fa-check-circle"></i>
+                            <i class="far fa-times-circle"></i>
+                        </div>
+                    </div>
+                    <div class="modal__descr">
+                        <div class="modal__btn left__btn">Да</div>
+                        <div class="modal__btn right__btn">Нет</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="up-arrow">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>   
+    
+    <footer class="footer center">
+        <p class="footer__text">&copy; 2021 Аренда спецтехники.</p>
+    </footer>
+
+</div>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

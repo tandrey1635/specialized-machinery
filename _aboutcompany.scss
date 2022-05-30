@@ -1,0 +1,186 @@
+.about__company{
+    .main__heading{
+        font-size: 30px;
+        text-transform: uppercase;
+        padding-top: 50px;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .left{ 
+        width: 800px;
+        .about__company__heading{
+            margin-top: 20px;
+            font-size: 26px;
+        }
+        .about__company__photo{
+            width: 800px;
+        }
+        .about__company__text{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .about__company__menu{
+            padding-top: 20px;
+        }
+        .about__company__list{
+        font-size: 18px;
+        margin-left: 50px;
+        margin-top: 10px;
+        }
+        .list_color{
+            font-weight: 700;
+        }
+    }
+    .right{
+        width: 280px;
+       
+        .comments{
+        margin-top: 20px;
+            &__heading{
+                font-size: 24px;
+            }
+            &__text{
+                font-style: italic;
+                margin-top: 20px;
+            }
+            &__client{
+            margin-top: 10px;
+            display: flex;
+            justify-content: flex-end;
+            font-weight: 700;
+            font-size: 14px;
+            }
+        }    
+    }
+    
+}
+
+
+@media (max-width: 1199px){
+    
+    .about__company{
+        .left{
+            width: 700px;
+            .about__company__photo{
+                width: 100%;
+            }
+        }  
+    }
+}
+
+@media (max-width: 1023px){
+    .about__company{
+        .left{
+            width: 650px;
+            
+        }  
+    }
+}
+
+// заголовок переделать
+@media (max-width: 991px){
+    .about__company{
+        .about__company__text{
+            text-align: center;
+        }
+        .content{
+            flex-direction: column;
+        }
+        .main__heading{
+            text-indent: 15px;
+        }
+        
+        .left{
+            margin: 0 auto;
+            width: 700px;
+        }   
+        .right{
+           width: 300px;
+           margin: 50px auto 0;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    
+    .about__company{
+        .left{
+           
+            width: 600px;
+        }
+    }
+   
+}
+
+// заголовок переделать и ниже
+@media (max-width: 666px){
+    .about__company{
+        //переделать
+        .main__heading{
+            text-indent: 35px;
+        }
+        .left{
+            width: 500px;
+        }
+    }
+   
+}
+
+@media (max-width: 575px){
+    .about__company{
+      
+        .main__heading{
+           font-size: 24px;
+        }
+        .left{
+            width: 450px;
+            .about__company__heading{
+                font-size: 20px;
+            }
+            .about__company__text{
+                font-size: 16px;
+            }
+            .about__company__list{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 479px){
+    .about__company{
+        .main__heading{
+           font-size: 20px;
+        }
+        .left{
+            width: 100%;
+            .about__company__heading{
+                text-align: center;
+                font-size: 16px;
+            }
+            .about__company__text{
+                font-size: 14px;
+            }
+            .about__company__list{
+                font-size: 16px;
+            }
+        }
+        .comments{
+            .comments__heading{
+                font-size: 20px;
+            }
+            .comments__text{
+                font-size: 14px;
+            }
+        }
+        .right{
+            text-align: center;
+            width: 100%;
+        }
+        
+    }
+}

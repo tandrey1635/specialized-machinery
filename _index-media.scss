@@ -1,0 +1,830 @@
+// Главная
+
+@media (max-width: 1350px){
+    .center{
+        padding-left: calc(50% - 570px);
+        padding-right: calc(50% - 570px);
+    }
+    .promo{
+        .slider__descr{
+            left: 100px;
+        }    
+    }
+    .what-we-do{
+        &__content{
+            justify-content: space-evenly;
+        }
+        &__block-items{
+            display: block;
+        }
+        &__items{
+            margin-top: 50px;
+        }
+        
+    }
+    .popular__technic{
+        &-left_btn{
+            left: 250px;
+        }
+        &-right_btn{
+            right: 250px;
+        }
+    }
+    .reviews{
+        background-size: 35%;
+    }
+    
+}
+
+@media (max-width: 1199px){
+    .center{
+        padding-left: calc(50% - 498px);
+        padding-right: calc(50% - 498px);
+    }
+    .promo{
+        .slider__heading{
+            text-align: center;
+            width: 65%;
+        }
+        .slider__descr{
+            left: 100px;
+        }
+        .slider__name{
+            font-size: 45px;
+        }
+        .slider__price, .slider__price_mod{
+            font-size: 35px;
+        }
+    }
+    .popular__technic{
+        &-left_btn{
+            left: 200px;
+        }
+        &-right_btn{
+            right: 200px;
+        }
+    } 
+    .reviews{
+        .reviews-left_btn{
+            left: 0;
+        }
+        .reviews-right_btn{
+            right: 250px;
+        }
+    }  
+}
+
+@media (max-width: 1023px){
+    .center{
+        padding-left: calc(50% - 480px);
+        padding-right: calc(50% - 480px);
+    }
+    .reviews{
+        .reviews-left_btn{
+            left: 10px;
+        }
+    } 
+    
+}    
+
+@media (max-width: 991px){
+    .center{
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+    .timer__heading, .what-we-do__heading, .catalog__header, .popular__technic__header, .reviews__header{
+        font-size: 26px;
+    }
+    .header{
+        &__list:not(:last-child){
+            margin-right: 10px;
+        }
+        &__link{
+            font-size: 16px;
+        }
+    }
+  
+    .promo{
+        .slider__heading{
+            font-size: 20px;
+        }
+        .slider__name {
+            font-size: 40px;
+        }
+        .slider__descr{
+            left: 100px;
+        }
+    }
+    .timer{
+        &__descr-heading{
+            font-size: 22px;
+        }
+    }
+    .what-we-do{
+        &__content{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__items{
+            margin-top: 100px;
+        }
+        &__img{
+            width: 100px;
+        }
+        &__info{
+            width: 100%;
+        }
+        &__title{
+            font-size: 22px;
+        }
+        &__text{
+            font-size: 20px;
+        }
+    }
+    .catalog{
+        &__menu{
+            flex-wrap: wrap;
+        }
+        &__list{
+            width: 320px;
+            margin-top: 20px;
+        }
+    }
+    .popular__technic{
+        &_header {
+            font-size: 22px;
+        }
+        &-slider{
+            width: 730px;
+        }
+        &-left_btn{
+            left: 150px;
+        }
+        &-right_btn{
+            right: 150px;
+        }
+    }
+    .reviews{
+        .reviews-right_btn{
+            right: 60px;
+        }
+    } 
+    .about{
+        &__heading{
+            font-size: 60px;
+        }
+    }
+    .contact{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+        transform: translateY(0);
+        .info{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            padding: 70px 0;
+            width: 100%;
+            min-height: 100px;
+            border-bottom: 1px solid gray;
+            border-right: none;
+            .fas, .far{
+                font-size: 40px;
+                margin-right: 20px;
+               
+            }
+           
+            .work__time, .geolocations, .info__menu, .info__tel{
+                width: 60%;
+                font-size: 20px;
+            }
+            .info__menu{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        .info:not(:last-child) {
+            border-bottom: 1px solid gray;
+        }
+        
+    }
+    .dark__theme{
+        .contact{
+            .info:not(:last-child) {
+                border-right: none;
+                border-bottom: 1px solid yellow;
+            }
+        }
+    }
+    
+   
+
+}
+
+@media (max-width: 767px){
+    .center{
+        padding-left: calc(50% - 318px);
+        padding-right: calc(50% - 318px);
+    }
+    .timer__heading, .what-we-do__heading, .catalog__header, .popular__technic__header, .reviews__header{
+        font-size: 22px;
+    }
+    .dark__theme{
+        .contact{
+            .info:not(:last-child){
+                border-bottom: 1px solid yellow;
+                border-right: none;
+           }
+        }
+    }
+    .header{
+       display: none;
+    }
+    .header__mobile{
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 80%;
+        }
+        .switcher__label-mobile{
+            font-size: 16px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            height: 22px; 
+            padding-left: 60px;  
+        }
+        .header__top__mobile{
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            .block__burger{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 40px;
+                height: 30px;
+                .block__burger-line{
+                    width: 100%;
+                    height: 3px;
+                    display: block;
+                    background: #000;
+                }
+            }
+                 
+        }
+        
+    }
+    .header__bottom__mobile{
+        top: -400px;
+        position: fixed;
+        z-index: 10;
+        background: #fff;
+        width: 100%;
+        display: block;
+        transition: .5s;
+        min-height: 200px;
+        .header__block__content{
+            background: #000;
+            padding: 20px;
+        }
+        .header__mobile__nav{
+            padding: 20px;
+        }
+        .header__mobile__menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 200px;
+        }
+        .block__left{
+            display: flex;
+        }
+       
+        .right{
+            margin-top: 20px;
+        }
+        .fa-phone-alt, .fa-map-signs{
+            color: #fcbc04;
+            margin-right: 10px;
+        }
+        .heading__city{
+            color: #fff;
+            font-weight: 400;
+        }
+        .header__mobile__nav{
+            background: #fff;
+        }
+        .header__list:not(:last-child){
+            margin-right: 0;
+        }
+        .header__mobile__link{
+            font-size: 16px;
+        }
+    }
+    .mobile-active{
+        z-index: 15;
+        transition: .5s;
+        top: 85px;
+        
+    }
+    
+    .promo{
+        .slider__descr{
+            width: 75%;
+        }
+        .slider__heading{
+            font-size: 18px;
+        }
+        .slider__name{
+            font-size: 34px;
+        }
+        .slider__price{
+            font-size: 32px;
+        }
+       
+    }
+    .timer{
+        &__descr-heading{
+            font-size: 18px;
+        }
+    }
+    
+    .catalog{
+        &__menu{
+            margin-top: 50px;
+        }
+        &__list{
+            width: 280px;
+        }
+    }
+    .popular__technic{
+        &_price{
+            font-size: 18px;
+        }
+        &_header{
+            font-size: 20px;
+        }
+        &_text{
+            font-size: 16px;
+        }
+        &-slider{
+            width: 620px;
+        }
+        &-photo{
+            height: 50%;
+        }
+        &-left_btn{
+           top: 535px;
+           left: 100px;
+        }
+        &-right_btn{
+           top: 535px;
+           right: 100px;
+       }
+    }
+    .reviews{
+        .reviews__slider{
+            width: 80%;
+        }
+        .reviews-left_btn{
+            left: -10px;
+            width: 55px;
+            height: 55px;
+            i{
+                font-size: 25px;
+            }
+        }
+        .reviews-right_btn{
+            right: 10px;
+            width: 55px;
+            height: 55px;
+            i{
+                font-size: 25px;
+            }
+        }
+        .slider__text{
+            font-size: 14px;
+        }
+        .slider__text_mod{
+            font-size: 18px;
+        }
+    }
+    .about{
+        padding: 50px 0;
+        .content{
+            min-height: 400px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__heading{
+            font-size: 55px;
+        }
+    }
+    
+    .footer{
+        &__text{
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 666px){
+    .center{
+        padding-left: calc(50% - 272px);
+        padding-right: calc(50% - 272px);
+    }
+    .timer__heading, .what-we-do__heading, .catalog__header, .popular__technic__header, .reviews__header{
+        font-size: 20px;
+    }
+    .promo{
+        .slider__heading{
+            font-size: 16px;
+        }
+        .slider__name{
+            font-size: 28px;
+        }
+        .slider__price{
+            font-size: 24px;
+        }
+        .slider__price_mod{
+            font-size: 26px;
+        }
+        .slider__btn{
+            font-size: 16px;
+        }
+    }
+    .timer{
+       &__descr-heading{
+           font-size: 16px;
+           text-align: center;
+       }
+    }
+    .what-we-do{
+        &__title{
+            font-size: 20px;
+        }
+        &__text{
+            font-size: 18px;
+        }
+    }
+    .catalog{
+        &__list{
+            width: 240px;
+        }
+    }
+    .popular__technic{
+        &_header{
+            font-size: 18px;
+        }
+        &-slider{
+            width: 520px;
+        }
+        &-left_btn{
+            top: 470px;
+         }
+        &-right_btn{
+            top: 470px;
+        }
+        .slider__btn{
+            font-size: 16px;
+        }
+    }
+    .reviews{
+        .reviews__wrapper{
+            margin-top: 30px;
+        }
+        background-position-y: 300px;
+        background-size: 50%;
+        
+    }
+    .contact{
+        .info{
+            .work__time, .geolocations, .info__menu, .info__tel{
+                font-size: 18px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 575px){
+    .center{
+        padding-left: calc(50% - 225px);
+        padding-right: calc(50% - 225px);
+    }
+    .timer__heading, .what-we-do__heading, .catalog__header, .popular__technic__header, .reviews__header{
+        font-size: 18px;
+    }
+    .promo{
+        .slider__heading{
+            font-size: 14px;
+        }
+        .slider__name{
+            font-size: 24px;
+        }
+        .slider__btn{
+            font-size: 14px;
+        }
+    } 
+    .timer{
+        &__descr-heading{
+            font-size: 16px;
+        }
+    }
+    .what-we-do{
+        &__title{
+            font-size: 18px;
+        }
+        &__text{
+            font-size: 16px;
+        }
+    }
+    .catalog{
+        &__list{
+            width: 200px;
+        }
+    }
+    .catalog, .popular__technic, .reviews{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .popular__technic{
+        &_price{
+            font-size: 16px;
+        }
+        &_header{
+            font-size: 16px;
+        }
+        &-slider{
+            width: 450px;
+        }
+        &_text{
+            font-size: 14px;
+        }
+        &-left_btn{
+            top: 415px;
+            left: 50px;
+         }
+        &-right_btn{
+            top: 415px;
+            right: 50px;
+        }
+        .slider__btn{
+            font-size: 14px;
+        }
+    }
+    .reviews{
+        background-size: 60%;
+        .slider__text{
+            font-size: 12px;
+        }
+        .reviews-left_btn, .reviews-right_btn{
+            width: 40px;
+            height: 40px;
+            i{
+                font-size: 20px;
+            }
+        }
+    }
+    .about{
+        &__heading{
+            font-size: 50px;
+        }
+        &__text{
+            font-size: 16px;
+        }
+
+    }
+    .contact{
+        .info{
+            .work__time, .geolocations, .info__menu{
+                width: 50%;
+            }
+            .info__menu{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    
+
+}
+
+
+
+@media (max-width: 479px){
+    .center{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .timer__heading, .what-we-do__heading, .catalog__header, .popular__technic__header, .reviews__header{
+        font-size: 13px;
+    }
+    .header__mobile{
+        .switcher__label-mobile{
+            font-size: 10px;
+            font-weight: 700;
+            text-align: center;
+            padding-left: 40px;
+            width: 100px;
+        }  
+    }
+    .header__bottom__mobile{
+        .heading__city{
+            font-size: 14px;
+        }
+        .header__tel{
+            font-size: 14px;
+        }
+        .header__tel:not(:last-child){
+            margin-right: 10px;
+        }
+        .header__mobile__link{
+            font-size: 14px;
+        }
+    } 
+    .mobile-active{
+        top: 80px;
+    }
+    .promo{
+        .slider__descr{
+            top: 50px;
+            left: 50px;
+        }
+        .block__slider__heading{
+            width: 75%;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .slider__heading{
+            width: 100%;
+            font-size: 12px;
+        }
+        .slider__img{
+            height: 400px;
+        }
+        .slider__name{
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .slider__price{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .slider__price_mod{
+            font-size: 20px;
+        }
+        .slider__btn{
+            padding: 14px 16px;
+            font-size: 10px;
+        }
+        .arrow__left{
+            top: 200px;
+            width: 40px;
+            height: 40px;
+            left: 10px;
+            .fa-chevron-left{
+                font-size: 20px;
+            }
+        }
+        .arrow__right{
+            top: 200px;
+            width: 40px;
+            height: 40px;
+            right: 10px;
+            .fa-chevron-right{
+                font-size: 20px;
+            }
+        }
+    
+   
+    }   
+    .timer{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        transform: translateY(0);
+        min-height: 350px;
+        &__title{
+            margin: 30px auto 0;
+        }
+        &__descr-heading{
+            font-size: 12px;
+        }
+        .block__timer-clock{
+            width: 50px;
+            height: 50px;
+            font-size: 28px;
+        }
+        .block__timer:not(:last-child){
+            margin-right: 10px;
+        }
+        .block__timer-text{
+            font-size: 12px;
+        }
+    }
+    .what-we-do{
+        &__title{
+            font-size: 16px;
+        }
+        &__text{
+            font-size: 12px;
+        }
+        &__items{
+            margin-top: 50px;
+        }
+    }
+    .catalog{
+       &__items{
+           width: 300px;
+        }
+        &__list{
+            width: 130px;
+        }
+        &__list{
+            font-size: 12px;
+        }
+        .left__btn, .right__btn{
+            width: 120px;
+        }
+    }
+    .popular__technic{
+        &-slider{
+            width: 320px;
+        }
+        &_price{
+            font-size: 14px;
+        }
+        &_header{
+            font-size: 14px;
+        }
+        &_text{
+            font-size: 12px;
+        }
+        .slider__btn{
+            padding: 12px 20px;
+            font-size: 12px;
+        }
+        &-left_btn{
+            top: 350px;
+            width: 40px;
+            height: 40px;
+            left: 30px;
+            .fas{
+                font-size: 20px;
+            }
+        }
+        &-right_btn{
+            top: 350px;
+            width: 40px;
+            height: 40px;
+            right: 30px;
+            .fas{
+                font-size: 20px;
+            }
+        }
+    }
+    .reviews{
+        background-position: center 340px;
+        .slider__items{
+            display: flex;
+            flex-direction: column;
+        }
+        .slider__text-review{
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            justify-content: center;
+        }
+    }
+    .about{
+        &__heading{
+            font-size: 35px;
+        }
+        &__text{
+            font-size: 14px;
+        }
+    }
+    .contact{
+        .info{
+            .work__time, .geolocations, .info__menu, .info__tel{
+                font-size: 14px;
+            }
+            .fas, .far{
+                font-size: 30px;
+            }
+        }
+    }
+    .footer{
+        &__text{
+            font-size: 14px;
+        }
+    }
+   
+}
+
