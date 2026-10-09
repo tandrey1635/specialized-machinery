@@ -1,0 +1,123 @@
+@media (max-width: 1350px) {
+	.promo__slider__arrow {
+		&__left {
+			left: 1%;
+		}
+
+		&__right{
+			right: 1%;
+		}
+	}
+}
+
+@media (max-width: 1300px) {
+	.reviews__slider__arrow {
+		top: 45%;
+		&__left {
+			left: 50px;
+		}
+
+		&__right {
+			right: 50px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.btn {
+		&__slider__arrow {
+			&__left {
+				left: 1%;
+			}
+
+			&__right {
+				right: 1%;
+			}
+		}
+	}
+
+	.promo__slider__arrow {
+		&__left, &__right {
+			top: 40%;
+		}
+	}
+
+	.reviews__slider__arrow {
+		top: 45%;
+	}
+}
+
+@media (max-width: 768px) {
+	.btn {
+		&__block__slider__arrow {
+			margin-top: 32px;
+			display: flex;
+			justify-content: center;
+			gap: 32px;
+			&_promo {
+				margin-top: 0;
+			}
+
+			&_popular__technic {
+				margin-top: 56px;
+			}
+		}
+
+		&__slider__arrow {
+			position: static;
+			transform: none;
+		}
+	}
+
+	.promo__slider__arrow {
+		position: absolute;
+	}
+}
+
+@media (max-width: 576px) {
+	.btn {
+		&__rent {
+			padding: 12px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.btn {
+		&__rent {
+			font-size: 18px;
+		}
+	}
+}
+
+@media (max-width: 428px) {
+	.btn {
+		&__rent {
+			font-size: 16px;
+		}
+
+		&__slider__arrow {
+			&__left, &__right {
+				width: 50px;
+				height: 50px;
+				i {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 380px) {
+	.btn {
+		&__slider__arrow {
+			width: 45px;
+			height: 45px;
+			&__left, &__right {
+				i {
+					font-size: 22px;
+				}
+			}
+		}
+	}
+}

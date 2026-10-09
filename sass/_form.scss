@@ -1,0 +1,52 @@
+.form {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	border: 2px solid var(--defaultBorder);
+	box-shadow: 0 0 6px var(--defaultShadow);
+	&__header {
+		font-size: 20px;
+     	text-transform: uppercase;
+	}
+
+	&__subheader {
+		font-size: 18px;
+	}
+
+	&__link {
+     	font-size: 22px;
+		color: var(--formLinkColor);
+		&:hover {
+			text-decoration: underline;
+		}
+ 	}
+
+	&__input {
+		width: 100%;
+		padding: 0 10px;
+		height: 30px;
+		border-radius: 8px;
+		border: 2px solid var(--inputBorder);
+		&:focus {
+			border: 2px solid var(--secondBorder);
+		}
+	}
+
+	&__btn {
+		width: 80%;
+		margin: auto;
+		background-color: var(--secondColor);
+		font-size: 20px;
+		border-radius: 30px;
+		padding: 12px;
+		font-weight: 700;
+		transition: 0.5s;
+		filter: drop-shadow(3px 3px 3px var(--defaultShadow));
+		&:hover {
+			background-color: var(--defaultColor);
+			color: var(--secondColor);
+			transition: 0.5s;
+		}
+	}
+}

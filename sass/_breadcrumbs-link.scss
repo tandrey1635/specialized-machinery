@@ -1,0 +1,37 @@
+.breadcrumbs {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+
+	&__list {
+		position: relative;
+		display: flex;
+		align-items: center;
+		&:hover i {
+			color: var(--breadcrumbsHoverColor);
+		}
+	}
+
+	i {
+		font-size: 16px;
+		margin-right: 10px;
+		color: var(--breadcrumbsColor);
+	}
+
+	&__link {
+		color: var(--breadcrumbsColor);
+		&:hover {
+			color: var(--breadcrumbsHoverColor);
+		}
+	}
+}

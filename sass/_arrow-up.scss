@@ -1,0 +1,34 @@
+.arrow__up {
+	position: fixed;
+	display: none;
+    justify-content: center;
+    align-items: center;
+	width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 10px;
+    z-index: 20;
+    background-color: var(--btnMainColor);
+    border-radius: 100%;
+    cursor: pointer;
+	filter: drop-shadow(0 0 3px var(--defaultShadow));
+	&:hover {
+		background-color: var(--defaultColor);
+	}
+
+	&:hover i {
+		color: var(--secondColor);
+		transform: translateY(-2px);
+		transition: 0.5s;
+	}
+
+	&.active {
+		display: flex;
+	}
+
+    i {
+		transition: 0.5s;
+        font-size: 30px;
+        color: var(--defaultColor);
+    }
+}

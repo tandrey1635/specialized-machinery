@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <script src="https://kit.fontawesome.com/fda6639a1f.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top center">
+				<div class="header__left">
+					<i class="fas fa-map-signs"></i>
+					<p class="header__address">г.Москва, ул. Красная площадь д.1</p>
+				</div>
+
+				<div class="header__right">
+					<a href="tel:87422228888" class="header__link">
+						<i class="fas fa-phone-alt"></i>8 (7422) 22-88-88
+					</a>
+
+					<a href="tel:81234567891" class="header__link">
+						<i class="fas fa-phone-alt"></i>8 (1234) 56-78-91
+					</a>
+				</div>
+			</div>
+
+			<div class="header__center center">
+				<div class="header__switcher">
+					<input class="header__switcher__input" type="checkbox" name="watched" id="switcher">
+					<label class="header__switcher__label" for="switcher">Темная тема</label>
+				</div>
+			</div>
+
+			<div class="header__bottom center">
+				<div class="header__logo">
+					<a href="../index.html">
+						<img src="../icons/header-logo.png" alt="Логотип">
+					</a>
+				</div>
+
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li class="header__list">
+							<a href="../index.html" class="header__nav__link">Главная</a>
+						</li>
+
+						<li class="header__list">
+							<a href="about-company.html" class="header__nav__link">О компании</a>
+						</li>
+
+						<li class="header__list">
+							<a href="../index.html#catalog" class="header__nav__link">Каталог спецтехники</a>
+						</li>
+
+						<li class="header__list">
+							<a href="rent.html" class="header__nav__link">Условия аренды</a>
+						</li>
+
+						<li class="header__list">
+							<a href="#" class="header__nav__link header__nav__link_active">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="burger__menu">
+					<span class="burger__menu__line"></span>
+					<span class="burger__menu__line"></span>
+					<span class="burger__menu__line"></span>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="inner__page center">
+				<h1 class="inner__page__header">Контакты</h1>
+				<div class="inner__page__wrapper">
+					<div class="inner__page__left">
+						<ul class="inner__page__menu inner__page__menu_contacts">
+							<li class="inner__page__list">
+								<i class="fas fa-map-marker-alt"></i>г.Москва, Красная площадь д.1
+							</li>
+
+							<li class="inner__page__list">
+								<i class="far fa-clock"></i>пн–сб: 11:00–20:00 вс: выходной
+							</li>
+
+							<li class="inner__page__list">
+								<a class="inner__page__link" href="tel:87422228888">
+									<i class="fas fa-phone-alt"></i>8 (7422) 22-88-88
+								</a>
+							</li>
+
+							<li class="inner__page__list">
+								<a class="inner__page__link" href="tel:81234567891">
+									<i class="fas fa-phone-alt"></i>8 (1234) 56-78-91
+								</a>
+							</li>
+
+							<li class="inner__page__list">
+								<a class="inner__page__link" href="mailto:info@sitename.com">
+									<i class="fas fa-envelope"></i>info@sitename.com
+								</a>
+							</li>
+						</ul>
+						<p class="inner__page__text">Общество с ограниченной ответственностью &laquo;Аренда спецтехники&raquo;</p>
+						<h2 class="inner__page__heading">Банковские реквизиты:</h2>
+						<ul class="inner__page__menu inner__page__menu_contacts">
+							<li class="inner__page__list">БИК 041234567</li>
+							<li class="inner__page__list">Р/с №99879420880090091122 в ОАО &laquo;Сберегательный банкъ&raquo;</li>
+							<li class="inner__page__list">Кор/счет 90505350500000000123 </li>
+						</ul>
+
+						<div class="inner__page__map">
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5993fec8cae1daf8a7f2cfd820b5cdd800f67df1b6802cc04eb5b09a08158844&amp;lang=ru_RU&amp;scroll=false"></script>
+						</div>
+					</div>
+
+					<div class="inner__page__right">
+						<div class="inner__page__block__form">
+							<form action="#" class="form">
+								<h3 class="form__header">Возникли вопросы?</h3>
+								<h4 class="form__subheader">Звоните по телефону:</h4>
+								<ul class="form__menu">
+									<li class="form__list">
+										<a href="tel:87422228888" class="form__link">8 (7422) 22-88-88</a>
+									</li>
+
+									<li class="form__list">
+										<a href="tel:81234567891" class="form__link">8 (1234) 56-78-91</a>
+									</li>
+								</ul>
+								<p class="form__text">Или оставьте нам свой номер телефона. Мы свяжемся с Вами в ближайшее время.</p>
+								<input type="text" class="form__input" placeholder="Ваше имя*" required>
+								<input type="tel" class="form__input" placeholder="Ваш телефон*" maxlength="11" required>
+								<div class="block__lable__checkbox">
+									<!-- Браузерный чекбокс -->
+									<input type="checkbox" id="checkbox1" class="default__checkbox" checked required>
+									<!-- Кастомный чекбокс -->
+									<label class="custom__checkbox__wrapper" for="checkbox1">
+										<span class="custom__checkbox"></span>
+										<span class="label__checkbox">даю согласие на обработку и хранение персональных данных</span>
+									</label>
+								</div>
+								<p class="form__text">* - поля, обязательные для заполнения</p>
+								<button class="form__btn" type="submit">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__wrapper center">
+				<p class="footer__text">&copy; 2021 Аренда спецтехники</p>
+			</div>
+		</footer>
+
+		<div class="arrow__up">
+			<i class="fas fa-arrow-up"></i>
+		</div>
+	</div>
+
+
+	<script src="../js/theme.js"></script>
+	<script src="../js/burger-menu-scroll-link.js"></script>
+	<script src="../js/scroll-behavior.js"></script>
+	<script src="../js/arrow-up.js"></script>
+</body>
+</html>

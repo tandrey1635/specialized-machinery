@@ -1,0 +1,16 @@
+@media (max-width: 428px) {
+	.header__switcher__label {
+		font-size: 20px;
+	}
+
+	.header__switcher__label:before {
+		top: 2px;
+		height: 20px;
+	}
+
+	.header__switcher__label:after {
+		top: 2.5px;
+		width: 18px;
+		height: 18px;
+	}
+}

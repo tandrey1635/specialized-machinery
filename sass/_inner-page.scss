@@ -1,0 +1,137 @@
+.inner__page {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	&__header {
+		font-size: 30px;
+	}
+
+	&__img {
+		height: 500px;
+		img {
+			object-fit: cover;
+		}
+	}
+
+	&__wrapper {
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+	}
+
+	&__left {
+		width: 70%;
+	}
+
+	&__right {
+		width: 30%;
+	}
+
+	&__heading, &__subheading {
+        margin-top: 20px;
+        font-size: 26px;
+    }
+
+	&__subheading {
+		padding-left: 20px;
+		font-size: 20px;
+	}
+
+	&__text, &__menu {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+	&__menu {
+		list-style: disc;
+		padding-left: 40px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		&_contacts {
+			margin-top: 0;
+			list-style: none;
+			padding-left: 0;
+		}
+
+		span {
+			font-weight: 700;
+		}
+	}
+
+	ol {
+		list-style: decimal;
+	}
+
+	&__list, &__link {
+		i {
+			color: var(--innerPageIconColor);
+			margin-right: 10px;
+		}
+	}
+
+	&__link {
+		display: inline-flex;
+		color: var(--innerPageLinkColor);
+		&:hover, &:hover i {
+			color: var(--hoverSecondColor);
+		}
+	}
+
+	&__faq__wrapper {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__faq__item {
+		padding-left: 40px;
+	}
+
+	&__faq__question {
+		font-size: 20px;
+	}
+
+	&__faq__answer {
+		padding-left: 20px;
+		margin-top: 10px;
+		font-size: 18px;
+	}
+
+	&__block__form {
+		margin-top: 20px;
+	}
+
+	&__reviews {
+		&__header {
+			font-size: 24px;
+		}
+
+		&__item {
+			margin-top: 20px;
+		}
+
+		&__text, &__client {
+			margin-top: 10px;
+            font-style: italic;
+        }
+
+		&__client {
+			display: flex;
+			justify-content: flex-end;
+			font-weight: 700;
+        }
+	}
+
+	&__map {
+		margin-top: 20px;
+		height: 500px;
+	}
+
+	&__block__btn {
+		margin-top: 32px;
+		display: flex;
+		justify-content: flex-end;
+	}
+}

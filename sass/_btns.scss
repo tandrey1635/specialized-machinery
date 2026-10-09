@@ -1,0 +1,111 @@
+.btn {
+	&__rent {
+		background-color: var(--btnMainColor);
+		font-size: 20px;
+		padding: 13px 20px;
+		font-weight: 700;
+		color: var(--btnSecondColor);
+		transition: 0.5s;
+		filter: drop-shadow(3px 3px 3px var(--btnMainShadow));
+		&:hover {
+			background-color: var(--btnSecondColor);
+			color: var(--btnMainColor);
+			transition: 0.5s;
+		}
+	}
+
+	&__slider__arrow {
+		display: flex;
+        align-items: center;
+        justify-content: center;
+		position: absolute;
+		top: 35%;
+		transform: translateY(-50%);
+		width: 60px;
+        height: 60px;
+		background-color: var(--btnMainColor);
+        cursor: pointer;
+		border-radius: 100%;
+		filter: drop-shadow(0 0 3px var(--btnMainShadow));
+		&:hover {
+			background-color: var(--btnSecondColor);
+		}
+
+		&:hover i {
+			color: var(--btnMainColor);
+		}
+
+		&__left {
+			left: 50px;
+			i:hover {
+				transform: translateX(-5px);
+			}
+		}
+
+		&__right {
+			right: 50px;
+			i:hover {
+				transform: translateX(5px);
+			}
+		}
+
+		i {
+			font-size: 35px;
+			transition: 0.5s;
+			color: var(--btnSecondColor);
+			&:hover {
+				transition: 0.5s;
+			}
+		}
+	}
+}
+
+.promo__slider__arrow {
+	top: 50%;
+}
+
+.reviews__slider__arrow {
+	top: 45%;
+	&__left {
+		left: -70px;
+	}
+
+	&__right {
+    	right: 270px;
+	}
+}
+
+.catalog__btn, .show-more__btn, .inner__page__btn, .btn__modal {
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 700;
+	border: 2px solid var(--defaultBorder);
+	color: var(--defaultColor);
+	background-color: var(--mainBg);
+	&_left, &_no {
+		background-color: var(--mainBg);
+	}
+
+	&_right, &_yes {
+		background-color: var(--secondColor);
+	}
+
+	&:hover {
+		background-color: var(--defaultColor);
+		color: var(--secondColor);
+		border: 2px solid var(--secondBorder);
+	}
+}
+
+.show-more__btn {
+	margin: 64px auto 0;
+}
+
+.btn_hide {
+	display: none;
+}

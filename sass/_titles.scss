@@ -1,0 +1,45 @@
+.block__title {
+	display: flex;
+	justify-content: center;
+	&::before, &::after {
+		content: "";
+		filter: drop-shadow(0 0 3px var(--defaultShadow));
+	}
+
+	&::before {
+		border-left: 5px solid var(--secondBorder);
+		margin-right: 20px;
+	}
+
+	&::after {
+		border-right : 5px solid var(--secondBorder);
+		margin-left: 20px;
+	}
+
+	&_timer {
+        padding: 15px 0;
+		background-color: var(--timerSecondColor);
+		filter: drop-shadow(0 0 3px var(--defaultShadow));
+		&::before {
+			border-left: 5px solid var(--mainBorder);
+			margin-left: 20px;
+		}
+
+		&::after {
+        	border-right : 5px solid var(--mainBorder);
+			margin-right: 20px;
+    	}
+	}
+}
+
+.title {
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: var(--titleMainColor);
+	text-shadow: 3px 3px 3px var(--defaultShadow);
+	&_timer {
+        color: var(--mainColor);
+		filter: drop-shadow(0 0 3px var(--defaultShadow));
+	}
+}

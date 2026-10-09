@@ -1,0 +1,74 @@
+:root {
+	--mainBg: #fff;
+	--reviewsSliderBg: #020202ab;
+	--defaultColor: #272525;
+	--mainColor: #fff;
+	--secondColor: #fcbc04;
+	--breadcrumbsColor: #272525;
+	--breadcrumbsHoverColor: #fcbc04;
+	--reviewsSliderColor: #fcbc04;
+	--burgerMenuColor: #fcbc04;
+	--headerMainColor: #fff;
+	--footerMainColor: #272525;
+	--footerTextColor: #fcbc04;
+	--timerMainColor: #fff;
+	--timerSecondColor: #fcbc04;
+	--titleMainColor: #fcbc04;
+	--catalogColor: #fcbc04;
+	--catalogSecondColor: #272525;
+	--catalogHoverColor: #272525;
+	--catalogHoverSecondColor: #fcbc04;
+	--innerPageIconColor: #fcbc04;
+	--innerPageLinkColor: #fcbc04;
+	--formLinkColor: #fcbc04;
+	--formCheckboxColor: #fcbc04;
+	--hoverColor: #ffc1078c;
+	--hoverSecondColor: #ffc1078c;
+
+	/* Бордер */
+	--defaultBorder: #272525;
+	--inputBorder: #eaeaea;
+	--mainBorder: #fff;
+	--secondBorder: #fcbc04;
+	--contactsBorder: #fcbc04;
+
+	/* Тень */
+	--defaultShadow: #000;
+	--mainShadow: #fcbc04;
+	--headerShadow: #000;
+	--contactsShadow: #000;
+	--footerShadow: #000;
+	--opacityShadow: #00000080;
+
+	/* Кнопки */
+	--btnMainColor: #fcbc04;
+	--btnSecondColor: #272525;
+	--btnMainShadow: #000;
+}
+
+
+
+
+[data-theme="dark-theme"] {
+	--mainBg: #272525;
+	--defaultColor: #fcbc04;
+	--secondColor: #272525;
+	--timerMainColor: #272525;
+	--breadcrumbsColor: #fcbc04;
+	--breadcrumbsHoverColor: #ffc1078c;;
+	--hoverColor: #0000007c;
+
+	/* Бордер */
+	--defaultBorder: #fcbc04;
+	--contactsBorder: #272525;
+
+	/* Тень */
+	--headerShadow: #fcbc04;
+	--footerShadow: #fcbc04;
+	--contactsShadow: #fcbc04;
+	--opacityShadow: #fcbc04c7;
+
+	/* Кнопки */
+	--btnMainColor: #272525;
+	--btnSecondColor: #fcbc04;
+}

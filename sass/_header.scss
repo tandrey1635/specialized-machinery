@@ -1,0 +1,90 @@
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 20;
+	filter: drop-shadow(0 0 5px var(--headerShadow));
+	&__top, &__bottom {
+		justify-content: space-between;
+	}
+
+	&__top, &__bottom, &__switcher {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__top {
+		min-height: 30px;
+		background-color: var(--defaultColor);
+	}
+
+	&__center {
+		background-color: var(--mainBg);
+	}
+
+	&__bottom {
+		background-color: var(--mainBg);
+		position: relative;
+	}
+
+	&__logo {
+		position: relative;
+		width: 160px;
+		height: 70px;
+		z-index: 15;
+		a {
+			height: inherit;
+		}
+	}
+
+	&__menu {
+		display: flex;
+	}
+
+	&__list:not(:last-child){
+		margin-right: 20px;
+	}
+
+	&__nav__link {
+		font-size: 20px;
+		font-weight: 700;
+		border-bottom: 3px solid transparent;
+		&_active {
+			border-bottom: 3px solid var(--secondBorder);
+		}
+
+		&:hover {
+			border-bottom: 3px solid var(--secondBorder);
+		}
+	}
+
+	i {
+		color: var(--secondColor);
+		margin-right: 10px;
+		text-shadow: 3px 3px 3px var(--headerShadow);
+	}
+
+	&__left, &__right {
+		display: flex;
+		align-items: center;
+	}
+
+	&__address {
+		color: var(--secondColor);
+		font-size: 18px;
+		text-shadow: 3px 3px 3px var(--headerShadow);
+	}
+
+	&__link {
+		color: var(--secondColor);
+		text-shadow: 3px 3px 3px var(--headerShadow);
+		&:hover, &:hover i {
+			color: var(--hoverColor);
+		}
+
+		&:not(:last-child) {
+        	margin-right: 20px;
+    	}
+	}
+}

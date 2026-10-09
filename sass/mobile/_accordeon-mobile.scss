@@ -1,0 +1,14 @@
+@media (max-width: 1350px) {
+	.accordeon {
+		width: 100%;
+	}
+}
+
+@media (max-width: 428px) {
+	.accordeon {
+		min-height: auto;
+		&__header {
+			min-height: auto;
+		}
+	}
+}
